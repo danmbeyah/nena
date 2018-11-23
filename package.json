@@ -1,0 +1,45 @@
+{
+  "name": "bitsector-backend",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Bitsector API",
+  "keywords": [],
+  "author": "Daniel Mbeyah <danmbeyah@gmail.com>",
+  "license": "",
+  "main": "app.js",
+  "dependencies": {
+    "africastalking": "^0.3.2",
+    "axios": "^0.18.0",
+    "cors": "^2.8.4",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "helmet": "^3.13.0",
+    "lazy.js": "^0.5.1",
+    "moment": "^2.22.2",
+    "mysql2": "^1.5.3",
+    "sequelize": "^4.38.0",
+    "sequelize-cli": "^4.0.0",
+    "socket.io": "^2.1.1",
+    "swagger-express-mw": "^0.7.0",
+    "swagger-mysql-builder": "^1.0.7",
+    "swagger-tools": "^0.10.3"
+  },
+  "devDependencies": {
+    "chai": "^3.0.0",
+    "dotenv": "^1.2.0",
+    "mocha": "^2.2.5",
+    "request": "^2.58.0",
+    "should": "^7.1.0",
+    "supertest": "^3.1.0",
+    "z-schema": "^3.12.0"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "test": "swagger project test",
+    "lint": "eslint *",
+    "fix_linting": "eslint --fix *",
+    "migrate": "node_modules/.bin/sequelize db:migrate",
+    "undo_migration": "node_modules/.bin/sequelize db:migrate:undo",
+    "undo_all_migrations": "node_modules/.bin/sequelize db:migrate:undo:all"
+  }
+}
