@@ -9,7 +9,7 @@ const voice = AfricasTalking.VOICE
 const call =  (req) => {
 	voice.call({
 		callFrom: process.env.VIRTUAL_PHONE_NUMBER,
-		callTo: '+254726306316'
+		callTo: '+254726123456'
 	})
 	.then(callData => {
 		// persist call Info
@@ -28,7 +28,7 @@ const callCenter = (req) =>{
 	const text = 'Thank you for calling the Gender Based Violence Support call center. Your call is being transferred to a counsellor who will attend to you shortly. Please hold'
 	const response = '<?xml version="1.0" encoding="UTF-8"?><Response><Say>' 
 		+ text 
-		+ '</Say><Dial phoneNumbers="+254726306316" ringbackTone="" record="false" sequential="true"/></Response>'
+		+ '</Say><Dial phoneNumbers="+254726123456" ringbackTone="" record="false" sequential="true"/></Response>'
 	
 	return response
 }
