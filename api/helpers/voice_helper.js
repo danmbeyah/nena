@@ -28,7 +28,7 @@ const callCenter = (req) =>{
 	const text = 'Thank you for calling the Gender Based Violence Support call center. Your call is being transferred to a counsellor who will attend to you shortly. Please hold'
 	const response = '<?xml version="1.0" encoding="UTF-8"?><Response><Say>' 
 		+ text 
-		+ '</Say><Dial phoneNumbers="+254726306316" ringbackTone="http://smartag.co.ke/Sonata-pathetique-2nd-movement.mp3" record="false" sequential="true"/></Response>'
+		+ '</Say><Dial phoneNumbers="+254726306316" ringbackTone="" record="false" sequential="true"/></Response>'
 	
 	return response
 }
